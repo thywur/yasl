@@ -2,7 +2,7 @@
 
 2
 !=
-? ("Usage: yasl_fact <value>\n" print 1 exit)
+? ("Usage: yasl_fact <num>\n" print 1 exit)
 
 !
 
@@ -10,6 +10,9 @@ eval
 
 =
 0 < ? ("Please enter a non-negative value\n" print 1 exit)
+
+=
+25 > ? ("Please enter a smaller value\n" print 1 exit)
 
 =
 0 == ? (1 print "\n" print 0 exit)
