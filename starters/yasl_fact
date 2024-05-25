@@ -30,4 +30,4 @@ eval
 
 =
 factorial
-# #(print "\n" print)
+print "\n" print
