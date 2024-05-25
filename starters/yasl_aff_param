@@ -1,3 +1,8 @@
 #!yasl_linux
 
-1 == ? exit : ! # #(print "\n" print)
+1
+==
+? exit
+!
+#
+#(print "\n" print)
