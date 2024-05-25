@@ -36,7 +36,8 @@
 
 }	print_word
 
-0:=:1 !
+][:1
+1:1 1:!= ? ("Separator must be one character\n" print 1 exit)
 
 ][:3
 
@@ -44,5 +45,7 @@
 
 #
 @(
-	skip print_word #
+	skip
+	print_word
+	#
 )
