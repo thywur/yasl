@@ -1,6 +1,8 @@
 #!/bin/bash
 
+cd `dirname $0`
 chmod 777 yasl_linux
+export PATH="`pwd`:$PATH"
 
 cd starters
 chmod 777 $(ls | grep yasl)
