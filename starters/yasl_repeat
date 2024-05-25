@@ -1,0 +1,25 @@
+#!yasl_linux
+
+3
+<
+? ("Usage: yasl_repear <start_num> <value1> [ <value2> [ ...]]" print 1 exit)
+
+!
+
+=
+1
+<
+? ("<start_num> must be strictly positive\n" print 1 exit)
+=:1
+!
+
+#
+#(
+	1:=:0
+	1
+	+
+	=:1
+	#( = print)
+	!
+	"\n" print
+)
