@@ -1,0 +1,23 @@
+#!yasl_linux
+
+! !
+
+{
+	// eval	//a virer
+
+	= 0 == ? (0 print)
+
+	=:2
+	1:3
+	@(
+		3:=:0
+		= *
+		= 2:=:0 == ? (3:=:4 0) : (1:3 3:+:3) 	//result saved in stack 4
+	)
+}	sqrt
+
+1024
+=
+sqrt
+!
+4:# 1 == ? (4:print) : (1 exit)
