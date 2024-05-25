@@ -1,0 +1,8 @@
+#!yasl_linux
+
+1
+!=
+? ("No argument required\n" print 1 exit)
+
+read
+@(eval read)
