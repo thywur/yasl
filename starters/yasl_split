@@ -1,0 +1,42 @@
+#!yasl_linux
+
+3
+!=
+? ("Usage: yasl_split <separator> <string>\n" print 1 exit)
+
+!
+
+// "hello world hello"
+// # #(print "\n" print)
+
+0:=:1 !
+
+][ !
+
+{
+	1:=:2
+	0:=:2
+	2:==:2
+	2:@(
+		0:!
+		1:=:2
+		0:=:2
+		2:==:2
+	)
+} skip
+
+{
+
+}
+
+skip
+# #(= 1:=:0 == ? (! "\n") # !^)
+
+# 1 -
+#(+)
+// # []
+// ][ !
+// # #(print "\n" print)
+
+# #(0:=:3)
+# #(print)
