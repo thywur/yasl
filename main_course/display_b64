@@ -1,25 +1,31 @@
 #!yasl_linux
 
+
+
 // Check that the program did not receive any argument
 
 1
 !=
 ? ("No argument required\n" print 1 exit)
 
+#
+#(!)
+
 // Read on the standard input
 
 read
-=:1
 0 == ? ("Empty image\n" print exit 1)
+read
 @(
-    read
-	=:1 1:+:1
 	+
+    read
 )
+!
+][:2
 
 // Check wether the amount of character read in a multiple of 4
 
-1:=
+2:=
 4
 %
 0 != ? ("Error: Uncomplete image\n" print 1 exit)
@@ -27,7 +33,7 @@ read
 
 // Divide the amount of character read by 4 to get the number of pixels
 
-1:=
+2:=
 4
 /
 =:3
@@ -53,6 +59,28 @@ sqrt
 #(
 	4:=
 	#(
+		=
+		0
+		]#[:4
+		18:4
+		4:<<:4
+		=
+		1
+		]#[:4
+		12:4
+		4:<<:4
+		4:|:4
+		=
+		2
+		]#[:4
+		6:4
+		4:<<:4
+		4:|:4
+		=
+		3
+		]#[:4
+		4:<<:4
+		4:|:4
 		"\e[48;2;125;0;0m  \e[0m" print
 	)
 	"\n" print
