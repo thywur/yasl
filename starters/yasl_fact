@@ -1,0 +1,30 @@
+#!yasl_linux
+
+2
+!=
+? ("Usage: yasl_fact <value>\n" print 1 exit)
+
+!
+
+eval
+
+=
+0 < ? ("Please enter a non-negative value\n" print 1 exit)
+
+=
+0 == ? (1 print "\n" print 0 exit)
+
+{
+	1
+	2 !^ # !^
+	-
+	= 0 == ? (# ^ print "\n" print 0 exit)
+	=
+	# ^
+	*
+	factorial
+} factorial
+
+=
+factorial
+# #(print "\n" print)
