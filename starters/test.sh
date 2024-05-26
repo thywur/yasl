@@ -92,6 +92,8 @@ echo './yasl_repeat only | cat -e' &&  ./yasl_repeat only | cat -e
 echo
 echo './yasl_repeat | cat -e' &&  ./yasl_repeat | cat -e
 echo
+echo './yasl_repeat 1 * | cat -e' &&  ./yasl_repeat 1 * | cat -e
+echo
 echo
 echo Exercise 4 : yasl_fact && echo -------------------
 echo
@@ -133,5 +135,7 @@ echo
 echo './yasl_split "" "Empty string" | cat -e' &&  ./yasl_split "" "Empty string" | cat -e
 echo
 echo './yasl_split "45" "Not45a45unique45sep" | cat -e' &&  ./yasl_split "45" "Not45a45unique45sep" | cat -e
+echo
+echo './yasl_split "1" "111111111111111" | cat -e' &&  ./yasl_split "1" "111111111111111" | cat -e
 
 rm yasl_linux

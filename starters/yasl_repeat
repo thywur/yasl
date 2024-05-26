@@ -2,7 +2,7 @@
 
 3
 <
-? ("Usage: yasl_repeat <start_num> <value1> [ <value2> [ ...]]" print 1 exit)
+? ("Usage: yasl_repeat <start_num> <value1> [ <value2> [ ...]]\n" print 1 exit)
 
 !
 
