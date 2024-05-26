@@ -20,7 +20,7 @@
 eval
 
 =
-25 > ? ("Please enter a smaller value\n" print 1 exit)
+20 > ? ("Please enter a smaller value\n" print 1 exit)
 
 =
 0 == ? (1 print "\n" print 0 exit)
