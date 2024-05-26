@@ -50,12 +50,12 @@ read
 	1:!
 )
 
-// Check wether the amount of character read in a multiple of 4
+// Check whether the amount of characters read is a multiple of 4
 
 5:#
 4
 %
-0 != ? ("Error: Uncomplete pixel\n" print 1 exit)
+0 != ? ("Error: Incomplete pixel\n" print 1 exit)
 
 // Divide the amount of character read by 4 to get the number of pixels
 
