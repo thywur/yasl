@@ -29,19 +29,16 @@ echo './yasl_do 2 + 0 | cat -e' &&  ./yasl_do 2 + 0 | cat -e
 echo
 echo './yasl_do -2 + 2 | cat -e' &&  ./yasl_do -2 + 2 | cat -e
 echo
-
 echo './yasl_do 10 - 8 | cat -e' &&  ./yasl_do 10 - 8 | cat -e
 echo
 echo './yasl_do 5 - 95 | cat -e' &&  ./yasl_do 5 - 95 | cat -e
 echo
-
 echo './yasl_do 30 * 5 | cat -e' &&  ./yasl_do 30 '*' 5 | cat -e
 echo
 echo './yasl_do 5 * -1 | cat -e' &&  ./yasl_do 5 '*' -1 | cat -e
 echo
 echo './yasl_do -5 * -5 | cat -e' &&  ./yasl_do -5 '*' -5 | cat -e
 echo
-
 echo './yasl_do 30 / 5 | cat -e' &&  ./yasl_do 30 / 5 | cat -e
 echo
 echo './yasl_do  5 / -1 | cat -e' &&  ./yasl_do 5 / -1 | cat -e
@@ -50,17 +47,14 @@ echo './yasl_do 10 / 8 | cat -e' &&  ./yasl_do 10 / 8 | cat -e
 echo
 echo './yasl_do 10 / 0.5 | cat -e' &&  ./yasl_do 10 / 0.5 | cat -e
 echo
-
 echo './yasl_do 21 % 4 | cat -e' &&  ./yasl_do 21 % 4 | cat -e
 echo
 echo './yasl_do  20 % 4 | cat -e' &&  ./yasl_do 20 % 4 | cat -e
 echo
-
 echo './yasl_do 10 < 5 | cat -e' &&  ./yasl_do 10 '<' 5 | cat -e
 echo
 echo './yasl_do  10 > 5 | cat -e' &&  ./yasl_do 10 '>' 5 | cat -e
 echo
-
 echo './yasl_do 1 < 1 | cat -e' &&  ./yasl_do 1 '<' 1 | cat -e
 echo
 echo './yasl_do  1 > 1 | cat -e' &&  ./yasl_do 1 '>' 1 | cat -e
@@ -78,6 +72,25 @@ echo
 echo './yasl_do 1 != 1 | cat -e' &&  ./yasl_do 1 '!=' 1 | cat -e
 echo
 echo './yasl_do  2 != 1 | cat -e' &&  ./yasl_do 2 '!=' 1 | cat -e
+echo
+echo
+echo Exercise 3 : yasl_repeat && echo -------------------
+echo
+echo './yasl_repeat 0 1 | cat -e' &&  ./yasl_repeat 0 1 | cat -e
+echo
+echo './yasl_repeat 1 "42" | cat -e' &&  ./yasl_repeat 1 "42" | cat -e
+echo
+echo './yasl_repeat 5 "!" | cat -e' &&  ./yasl_repeat 5 "!" | cat -e
+echo
+echo './yasl_repeat 1 1 2 3 4 5 | cat -e' &&  ./yasl_repeat 1 1 2 3 4 5 | cat -e
+echo
+echo './yasl_repeat 5 1 2 3 4 5 | cat -e' &&  ./yasl_repeat 5 1 2 3 4 5 | cat -e
+echo
+echo './yasl_repeat "-5" "negative" | cat -e' &&  ./yasl_repeat "-5" "negative" | cat -e
+echo
+echo './yasl_repeat only | cat -e' &&  ./yasl_repeat only | cat -e
+echo
+echo './yasl_repeat | cat -e' &&  ./yasl_repeat | cat -e
 echo
 echo
 echo Exercise 4 : yasl_fact && echo -------------------
