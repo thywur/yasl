@@ -6,6 +6,9 @@
 
 !
 
+[#]
+2 > ? ("Please enter a smaller value\n" print 1 exit)
+
 eval
 
 =
