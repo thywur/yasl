@@ -38,6 +38,9 @@ read
 )
 
 1:#
+0 == ? ("Error: Empty image\n" print exit 1)
+
+1:#
 #(
 	1:=
 	is_b64
@@ -48,8 +51,6 @@ read
 	1:!
 )
 
-5:#
-0 == ? ("Error: Empty image\n" print exit 1)
 
 // Check wether the amount of character read in a multiple of 4
 
