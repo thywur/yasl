@@ -137,5 +137,7 @@ echo
 echo './yasl_split "45" "Not45a45unique45sep" | cat -e' &&  ./yasl_split "45" "Not45a45unique45sep" | cat -e
 echo
 echo './yasl_split "1" "111111111111111" | cat -e' &&  ./yasl_split "1" "111111111111111" | cat -e
+echo
+echo './yasl_split " " "" | cat -e' &&  ./yasl_split " " "" | cat -e
 
 rm yasl_linux
