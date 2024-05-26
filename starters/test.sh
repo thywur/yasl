@@ -6,24 +6,23 @@ cp ../yasl_linux .
 echo Exercise 0 : yasl_hw && echo -------------------
 
 echo './yasl_hw | cat -e' && ./yasl_hw | cat -e
-echo && echo -------------------
+echo
 echo ./yasl_hw arg | cat -e && ./yasl_hw arg | cat -e
-echo && echo -------------------
 echo
 echo
 echo Exercise 1 : yasl_aff_param && echo -------------------
-
+echo
 echo './yasl_aff_param | cat -e' && ./yasl_aff_param | cat -e
-echo && echo -------------------
+echo
 echo './yasl_aff_param 1 2 3 4 | cat -e' && ./yasl_aff_param 1 2 3 4 | cat -e
-echo && echo -------------------
+echo
 echo './yasl_aff_param un deux trois | cat -e' && ./yasl_aff_param un deux trois | cat -e
-echo && echo -------------------
+echo
 echo './yasl_aff_param ! | cat -e' && ./yasl_aff_param ! | cat -e
 echo
 echo
 echo Exercise 2 : yasl_do && echo -------------------
-
+echo
 echo './yasl_do 10 + 8 | cat -e' &&  ./yasl_do 10 + 8 | cat -e
 echo
 echo './yasl_do 2 + 0 | cat -e' &&  ./yasl_do 2 + 0 | cat -e
@@ -80,9 +79,9 @@ echo './yasl_do 1 != 1 | cat -e' &&  ./yasl_do 1 '!=' 1 | cat -e
 echo
 echo './yasl_do  2 != 1 | cat -e' &&  ./yasl_do 2 '!=' 1 | cat -e
 echo
-
+echo
 echo Exercise 4 : yasl_fact && echo -------------------
-
+echo
 echo './yasl_fac 0 | cat -e' &&  ./yasl_fact 0 | cat -e
 echo
 echo './yasl_fact 1 | cat -e' &&  ./yasl_fact 1 | cat -e
@@ -105,7 +104,21 @@ echo './yasl_fact 1a | cat -e' &&  ./yasl_fact 1a | cat -e
 echo
 echo './yasl_fact -5 | cat -e' &&  ./yasl_fact -5 | cat -e
 echo
-
-# % < > <= >= == !=
+echo
+echo Exercise 5 : yasl_split && echo -------------------
+echo
+echo './yasl_split " " "    1 22 333" | cat -e' &&  ./yasl_split " " "    1 22 333" | cat -e
+echo
+echo './yasl_split " " "1 22 333   " | cat -e' &&  ./yasl_split " " "1 22 333   " | cat -e
+echo
+echo './yasl_split " " "a      b" | cat -e' &&  ./yasl_split " " "a      b" | cat -e
+echo
+echo './yasl_split "1" | cat -e' &&  ./yasl_split "1" | cat -e
+echo
+echo './yasl_split | cat -e' &&  ./yasl_split | cat -e
+echo
+echo './yasl_split "" "Empty string" | cat -e' &&  ./yasl_split "" "Empty string" | cat -e
+echo
+echo './yasl_split "45" "Not45a45unique45sep" | cat -e' &&  ./yasl_split "45" "Not45a45unique45sep" | cat -e
 
 rm yasl_linux
