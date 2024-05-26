@@ -11,6 +11,15 @@
 								= "z" <= ? 1 : (0))))))))
 }	is_b64 //Add 1 to stack 0 if top of stack 0 is a b64 char, 0 if it is not
 
+{
+	// "getting index of " print = print "\n" print
+	= "/" == ? (63) : (
+		= "+" == ? (62): (
+			= "9" <= ? (= "0" - 52 +) : (
+				= "Z" <= ? (= "A" -) : (
+					= "z" <= ? (= "a" - 26 +) : (0)))))
+}	get_b64_index
+
 // Check that the program did not receive any argument
 
 1
@@ -27,28 +36,31 @@ read
 	][:1 1:!
 	1:#
 	#(
-		1:=:2
-		2:=
+		1:=
 		is_b64
 		0 == ? ("Error: " print print " is not a b64 character" print "\n" print 1 exit)
+		1:=
+		get_b64_index
+		// "found index: " print = print "\n" print
+		=:5
 		1:!
 	)
     read
 )
 
-2:#
+5:#
 0 == ? ("Error: Empty image\n" print exit 1)
 
 // Check wether the amount of character read in a multiple of 4
 
-2:#
+5:#
 4
 %
 0 != ? ("Error: Uncomplete pixel\n" print 1 exit)
 
 // Divide the amount of character read by 4 to get the number of pixels
 
-2:#
+5:#
 4
 /
 =
@@ -70,35 +82,6 @@ sqrt
 4:=
 "Found square : " print print "\n" print
 
-
-// 4:=
-// #(
-// 	4:=
-// 	#(
-// 		=
-// 		0
-// 		]#[:4
-// 		18:4
-// 		4:<<:4
-// 		=
-// 		1
-// 		]#[:4
-// 		12:4
-// 		4:<<:4
-// 		4:|:4
-// 		=
-// 		2
-// 		]#[:4
-// 		6:4
-// 		4:<<:4
-// 		4:|:4
-// 		=
-// 		3
-// 		]#[:4
-// 		4:<<:4
-// 		4:|:4
-// 		"\e[48;2;125;0;0m  \e[0m" print
-// 	)
-// 	"\n" print
-// )
+// 5:#
+// #(5:print "\n" print)
 
