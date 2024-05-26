@@ -37,7 +37,7 @@
 }	print_word
 
 ][:1
-1:1 1:!= ? ("Separator must be one character\n" print 1 exit)
+1:1 1:!= ? ("Separator must be a unique char\n" print 1 exit)
 
 ][:3
 
