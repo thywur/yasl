@@ -63,12 +63,10 @@ echo './yasl_do 1 <= 1 | cat -e' &&  ./yasl_do 1 '<=' 1 | cat -e
 echo
 echo './yasl_do  1 >= 1 | cat -e' &&  ./yasl_do 1 '>=' 1 | cat -e
 echo
-
 echo './yasl_do 1 == 1 | cat -e' &&  ./yasl_do 1 '==' 1 | cat -e
 echo
 echo './yasl_do  2 == 1 | cat -e' &&  ./yasl_do 2 '==' 1 | cat -e
 echo
-
 echo './yasl_do 1 != 1 | cat -e' &&  ./yasl_do 1 '!=' 1 | cat -e
 echo
 echo './yasl_do  2 != 1 | cat -e' &&  ./yasl_do 2 '!=' 1 | cat -e
