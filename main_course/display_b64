@@ -34,18 +34,18 @@
 read
 @(
 	][:1 1:!
-	1:#
-	#(
-		1:=
-		is_b64
-		0 == ? ("Error: " print print " is not a b64 character" print "\n" print 1 exit)
-		1:=
-		get_b64_index
-		// "found index: " print = print "\n" print
-		=:5
-		1:!
-	)
     read
+)
+
+1:#
+#(
+	1:=
+	is_b64
+	0 == ? ("Error: " print print " is not a b64 character" print "\n" print 1 exit)
+	1:=
+	get_b64_index
+	=:5
+	1:!
 )
 
 5:#
